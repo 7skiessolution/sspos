@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:sspos/screens/home/home_screen.dart';
 import 'package:sspos/screens/login_with_email.dart';
 import 'package:provider/provider.dart' as pro;
 
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
         routes: {
           '/': (context) => const LogInEmail(isEmailLogin: true, panelName: ''),
           // '/': (context) => const MtHomeScreen(),
-          // MtHomeScreen.route: (context) => const MtHomeScreen(),
+          MtHomeScreen.route: (context) => const MtHomeScreen(),
           // PosSale.route: (context) => const PosSale(),
           // Purchase.route: (context) => const Purchase(),
           // Product.route: (context) => const Product(),

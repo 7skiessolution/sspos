@@ -3,6 +3,7 @@ import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:sspos/Repositry/login_repo.dart';
+import 'package:sspos/screens/home/home_screen.dart';
 import 'package:sspos/uttils/constant.dart';
 
 // ignore: avoid_web_libraries_in_flutter
@@ -214,9 +215,11 @@ class _LogInEmailState extends State<LogInEmail> {
                                                           BorderRadius.circular(
                                                               8.0)),
                                               onPressed: (() {
-                                                if (validateAndSave()) {
-                                                  loginProvider.signIn(context);
-                                                }
+                                                Navigator.of(context).pushNamed(
+                                                    MtHomeScreen.route);
+                                                // if (validateAndSave()) {
+                                                //   loginProvider.signIn(context);
+                                                // }
                                               })),
                                           const SizedBox(height: 20.0)
                                               .visible(widget.isEmailLogin),
