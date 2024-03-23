@@ -1,9 +1,24 @@
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:sspos/screens/login_with_email.dart';
 import 'package:provider/provider.dart' as pro;
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+   if (kIsWeb) {
+    await Firebase.initializeApp(
+      options: const FirebaseOptions(
+         apiKey: "AIzaSyANru3d7mZmmNJOSU7wCTEZvq9dLgnLxcY",
+  authDomain: "sspos-9bda2.firebaseapp.com",
+  projectId: "sspos-9bda2",
+  storageBucket: "sspos-9bda2.appspot.com",
+  messagingSenderId: "158270785239",
+  appId: "1:158270785239:web:2f990f64b1991cd88fd292",
+  measurementId: "G-B3TW6K2Q1F"),
+    );
+  }
   runApp(const MyApp());
 }
 
