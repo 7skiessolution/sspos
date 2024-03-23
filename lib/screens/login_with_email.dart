@@ -246,29 +246,29 @@ class _LogInEmailState extends State<LogInEmail> {
                                                 ),
                                               ),
                                               const Spacer(),
-                                              SizedBox(
-                                                width: 130,
-                                                child: ListTile(
-                                                  onTap: () {
-                                                    // print("signup details");
-                                                    // Navigator.pushNamed(
-                                                    //     context, SignUp.route);
-                                                  },
-                                                  contentPadding:
-                                                      EdgeInsets.zero,
-                                                  horizontalTitleGap: 0,
-                                                  leading: const Icon(
-                                                    Icons.how_to_reg,
-                                                    color: kYellowColor,
-                                                  ),
-                                                  title: Text(
-                                                    'Registration',
-                                                    style: kTextStyle.copyWith(
-                                                        color: kYellowColor),
-                                                    textAlign: TextAlign.end,
-                                                  ),
-                                                ),
-                                              ),
+                                              // SizedBox(
+                                              //   width: 130,
+                                              //   child: ListTile(
+                                              //     onTap: () {
+                                              //       // print("signup details");
+                                              //       // Navigator.pushNamed(
+                                              //       //     context, SignUp.route);
+                                              //     },
+                                              //     contentPadding:
+                                              //         EdgeInsets.zero,
+                                              //     horizontalTitleGap: 0,
+                                              //     leading: const Icon(
+                                              //       Icons.how_to_reg,
+                                              //       color: kYellowColor,
+                                              //     ),
+                                              //     title: Text(
+                                              //       'Registration',
+                                              //       style: kTextStyle.copyWith(
+                                              //           color: kYellowColor),
+                                              //       textAlign: TextAlign.end,
+                                              //     ),
+                                              //   ),
+                                              // ),
                                             ],
                                           ).visible(widget.isEmailLogin),
                                         ],
