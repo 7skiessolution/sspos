@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
    if (kIsWeb) {
     await Firebase.initializeApp(
       options: const FirebaseOptions(
