@@ -31,7 +31,27 @@
 
   <title>sspos</title>
   <link rel="manifest" href="manifest.json">
+  <script type="module">
+    import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyANru3d7mZmmNJOSU7wCTEZvq9dLgnLxcY",
+  authDomain: "sspos-9bda2.firebaseapp.com",
+  projectId: "sspos-9bda2",
+  storageBucket: "sspos-9bda2.appspot.com",
+  messagingSenderId: "158270785239",
+  appId: "1:158270785239:web:2f990f64b1991cd88fd292",
+  measurementId: "G-B3TW6K2Q1F"
+};
+</script>
+  <script type="text/javascript">
+    window.flutterWebRenderer = "html";
+  </script>
   <script>
     // The value below is injected by flutter build, do not touch.
     const serviceWorkerVersion = null;
